@@ -1,0 +1,51 @@
+Day 25:
+==========
+
+1) What is a Class?
+==========================
+A class is a blueprint or template used to create objects.
+It defines data (variables/attributes) and behavior (methods/functions) together.
+Classes support Object-Oriented Programming (OOP) concepts like encapsulation, inheritance, and polymorphism.
+
+Example:
+
+class Student:
+    name = "Nikhil"
+    age = 22
+
+Here, Student is a class and name, age are class attributes.
+
+
+2) What is an Object & a Method?
+=======================================
+An object is an instance of a class.
+A method is a function defined inside a class that describes the behavior of an object.
+
+
+Example:
+
+class Student:
+    def display(self):
+        print("Hello Student")
+
+s1 = Student()   # object creation
+s1.display()    # method call
+
+self refers to the current object.
+
+
+3) Constructor (__init__)
+================================
+A constructor is a special method that runs automatically when an object is created.
+It is used to initialize object data.
+
+
+Example:
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Nikhil", 22)
+print(s1.name, s1.age)
